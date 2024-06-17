@@ -1,0 +1,136 @@
+.footer {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-light);
+}
+
+.footer__top {
+  padding: 49px 0 52px 0;
+}
+
+.footer__top-wrapper {
+  max-width: 1228px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__subscription-socials {
+  max-width: 650px;
+  width: 100%;
+}
+
+.footer__contacts {
+  font-style: normal;
+}
+
+.footer__title {
+  margin-bottom: 30px;
+}
+
+.footer__contacts-item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.footer__contacts-link {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__contacts-svg {
+  margin-right: 26px;
+}
+
+.footer__subscription {
+  margin-bottom: 44px;
+}
+
+.footer__subscription-form {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer__subscription-label {
+  width: 100%;
+  display: block;
+  margin-right: 33px;
+}
+
+.footer__subscription-label-text {
+  display: block;
+  margin-bottom: 17px;
+}
+
+.footer__subscription-input {
+  max-width: 447px;
+  width: 100%;
+  padding: 17px 21px;
+}
+
+.footer__subscription-btn {
+  padding: 17px 15px;
+  border: 1px white solid;
+  text-transform: uppercase;
+}
+
+.footer__subscription-btn:hover {
+  background-color: var(--yellow-color);
+  border: 1px solid var(--yellow-color);
+  color: var(--color-primary);
+}
+
+.footer__subscription-btn:focus-visible {
+  background-color: white;
+  border: 1px solid white;
+  color: var(--color-primary);
+}
+
+.footer__subscription-btn:active {
+  background-color: white;
+  border: 1px solid white;
+  color: var(--color-primary);
+}
+
+.footer__socials-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__socials-item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.footer__socials-link:hover svg path {
+  fill: var(--yellow-color);
+}
+
+.footer__socials-link:focus-visible svg path {
+  fill: var(--yellow-color);
+}
+
+.footer__socials-link:active svg path {
+  fill: var(--yellow-color);
+}
+
+.footer__bottom-wrapper {
+  padding: 26px 0 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px var(--text-color-light) solid;
+}
+
+.footer__logo {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42.19px;
+  color: var(--text-color-light);
+}
+
+.footer__bottom-text {
+  font-weight: 300;
+}
+
+.footer__subscription-message {
+  padding: 20px 0;
+}

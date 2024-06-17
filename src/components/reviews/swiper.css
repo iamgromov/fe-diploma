@@ -1,0 +1,11 @@
+.swiper-wrapper {
+  margin-bottom: 137px;
+}
+
+.reviews .swiper-pagination {
+  position: static;
+}
+
+.reviews .swiper-pagination-bullet {
+  opacity: 1;
+}

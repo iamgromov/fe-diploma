@@ -1,0 +1,112 @@
+.react-calendar-wrapper {
+  min-width: 100%;
+  position: absolute;
+  z-index: 500;
+}
+
+.react-calendar {
+  border-radius: 5px;
+}
+
+.hero__form_ticket .react-calendar-wrapper {
+  top: calc(100% + 20px);
+}
+
+.hero__form_main .react-calendar-wrapper {
+  top: -55px;
+}
+
+.passenger .react-calendar-wrapper {
+  top: calc(100% + 10px);
+  transform: translateX(-15%);
+}
+
+.tickets__form .react-calendar-wrapper {
+  min-width: 0;
+  color: var(--color-primary);
+}
+
+.main .react-calendar__navigation {
+  height: auto;
+  padding: 22px 0;
+  margin-bottom: 0;
+}
+
+.main .react-calendar__month-view {
+  padding: 15px;
+}
+
+.main .react-calendar__navigation button:enabled:hover {
+  background-color: white;
+}
+
+.main .react-calendar__navigation button:enabled:focus {
+  background-color: white;
+}
+
+.main .react-calendar__navigation button:disabled {
+  background-color: white;
+  color: var(--light-gray-color);
+}
+
+.react-calendar {
+  border-top: none;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.react-calendar__tile--hasActive {
+  background: rgb(255, 168, 0, 0.4);
+}
+
+.main .react-calendar .react-calendar__tile:disabled {
+  background-color: white;
+  color: var(--light-gray-color);
+}
+
+.react-calendar .react-calendar__tile--active {
+  padding: 0;
+  background: rgb(255, 168, 0, 0.4);
+  border: 3px var(--orange-color) solid;
+  border-radius: 6px;
+}
+
+.main .react-calendar__tile--active:enabled:hover {
+  background: rgb(255, 168, 0, 0.4);
+}
+
+.main .react-calendar__tile--active:enabled:focus {
+  background: rgb(255, 168, 0, 0.4);
+}
+
+.react-calendar .react-calendar__month-view__weekdays {
+  display: none !important;
+}
+
+.react-calendar__navigation {
+  border-bottom: 1px lightgray solid;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.react-calendar::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  border-width: 12px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.react-calendar__month-view__weekdays {
+  display: none;
+}

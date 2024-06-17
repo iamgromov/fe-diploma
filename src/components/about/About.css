@@ -1,0 +1,31 @@
+.about {
+  padding: 144px 0 91px;
+}
+
+.about__title {
+  margin-bottom: 30px;
+  color: var(--color-primary);
+}
+
+.about__content {
+  position: relative;
+  padding-left: 28px;
+}
+
+.about__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 102%;
+  width: 9px;
+  background-color: var(--orange-color);
+}
+
+.about__paragraph:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.about__paragraph:last-child {
+  font-weight: 700;
+}

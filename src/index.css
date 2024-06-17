@@ -1,0 +1,38 @@
+@import 'styles/normalize.css';
+@import 'styles/fonts.css';
+
+:root {
+  --color-primary: #292929;
+  --gray-color: #928F94;
+  --light-gray-color: #C4C4C4;
+  --bg-color-primary: #2D2B2F;
+  --bg-color-secondary: #3E3C41;
+  --text-color-light: #E5E5E5;
+  --orange-color: #FFA800;
+  --yellow-color: #FFCA62;
+  --white-color: #F7F5F9;
+  --swiper-theme-color: #C4C4C4;
+  --swiper-pagination-bullet-inactive-color: #E5E5E5;
+  --swiper-pagination-bullet-height: 19px;
+  --swiper-pagination-bullet-width: 19px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
