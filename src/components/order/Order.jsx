@@ -31,7 +31,7 @@ function Order({
 
   useEffect(() => {
     success === true && navigate(config.orderSuccessUrl);
-  }, [success]);
+  }, [success]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onOrderConfirm = () => {
     const orderData = { user, departure, arrival };

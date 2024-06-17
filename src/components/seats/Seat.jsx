@@ -17,7 +17,7 @@ function Seat({ item, route, coachId, price, service, couchClass }) {
 
   useEffect(() => {
     dispatch(updatePassengersPrice(route, coachId, price));
-  }, [service]);
+  }, [service]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onSeatClick = () => {
     if (

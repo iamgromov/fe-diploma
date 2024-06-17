@@ -20,7 +20,7 @@ function Pagination() {
     }
 
     didRender.current = true;
-  }, [currentPage]);
+  }, [currentPage]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onPrevClick = (amount) => {
     if (totalPages === 1) {

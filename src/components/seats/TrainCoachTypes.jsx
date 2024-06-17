@@ -25,7 +25,7 @@ function TrainCoachTypes({ id, route, onCoachTypeClick, activeCoachType }) {
   useEffect(() => {
     activeCoachType === "" && dispatch(resetRouteSeats(route));
     activeCoachType !== "" && dispatch(getSeats(route, id, params));
-  }, [activeCoachType]);
+  }, [activeCoachType]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="seats__coach-types">

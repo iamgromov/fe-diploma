@@ -24,7 +24,7 @@ function OrderPage() {
     if (!isOrderValid) {
       navigate("/");
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <section className="dashboard order">

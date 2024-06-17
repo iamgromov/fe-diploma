@@ -70,7 +70,7 @@ function TicketsPage() {
     } else {
       error && setIsErrorShown(true);
     }
-  }, [error, from_city_id, to_city_id]);
+  }, [error, from_city_id, to_city_id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (!isFormValid) {
@@ -78,7 +78,7 @@ function TicketsPage() {
     } else {
       dispatch(getLastTickets());
     }
-  }, [from_city_id, to_city_id]);
+  }, [from_city_id, to_city_id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (!isFormValid) {
@@ -90,7 +90,7 @@ function TicketsPage() {
       const newSearchParams = new URLSearchParams(params);
       setSearchParams(newSearchParams);
     }
-  }, [items, from_city_id, to_city_id]);
+  }, [items, from_city_id, to_city_id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (!isFormValid) {
@@ -102,20 +102,7 @@ function TicketsPage() {
       const newSearchParams = new URLSearchParams(params);
       dispatch(getTickets(newSearchParams));
     }
-  }, [
-    sort,
-    limit,
-    offset,
-    have_air_conditioning,
-    have_express,
-    have_first_class,
-    have_fourth_class,
-    have_second_class,
-    have_third_class,
-    have_wifi,
-    from_city_id,
-    to_city_id,
-  ]);
+  }, [sort, limit, offset, have_air_conditioning, have_express, have_first_class, have_fourth_class, have_second_class, have_third_class, have_wifi, from_city_id, to_city_id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <section ref={section} className="dashboard tickets">

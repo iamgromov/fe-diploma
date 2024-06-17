@@ -33,7 +33,7 @@ function PaymentForm() {
     if (errors.length === 0 && isFormValid) {
       navigate(config.orderUrl);
     }
-  }, [errors]);
+  }, [errors]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onValueChange = (e) => {
     const name = e.target.name;

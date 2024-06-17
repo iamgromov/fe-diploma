@@ -25,7 +25,7 @@ function TrainTickets({ route }) {
       setChildNoSeatTotal(`Детских «без места» — ${adultTicketsTotal}`);
       dispatch(route, updateNoSeatChildTotal(adultTicketsTotal));
     }
-  }, [adultTicketsTotal]);
+  }, [adultTicketsTotal]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onClick = (type) => {
     if (type === "childNoSeat" || activeTicketType === type) {

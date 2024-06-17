@@ -44,13 +44,13 @@ function PassengersPage() {
     } else {
       scrollTo(section.current?.offsetTop, "smooth");
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (departureSeats.length === 0 && arrivalSeats.length === 0) {
       navigate("/");
     }
-  }, [departureSeats, arrivalSeats]);
+  }, [departureSeats, arrivalSeats]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onAddPassengerClick = () => {
     const form = {

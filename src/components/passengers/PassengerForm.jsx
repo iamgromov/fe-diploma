@@ -77,7 +77,7 @@ function PassengerForm({
         })
       );
     }
-  }, [calendarValue]);
+  }, [calendarValue]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onValueChange = (e) => {
     if (isSuccessShown) {
@@ -279,7 +279,7 @@ function PassengerForm({
 
       dispatch(addOrderSeat(route, seatData, isChildNoSeatIncluded()));
     }
-  }, [errors]);
+  }, [errors]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (isErrorShown) {

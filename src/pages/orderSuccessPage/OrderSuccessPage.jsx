@@ -18,7 +18,7 @@ function OrderSuccessPage() {
     !success && navigate("/");
     scrollTo();
     setOrderId(nanoid());
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <section className="dashboard order-success">

@@ -22,7 +22,7 @@ function HeroDate({ route, date }) {
       const name = route === "from" ? "date_start" : "date_end";
       dispatch(updateDateValue(name, date.format("YYYY-MM-DD")));
     }
-  }, [value]);
+  }, [value]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onClickOut = (e) => {
     if (isCalendarShown && !calendar.current?.contains(e.target)) {

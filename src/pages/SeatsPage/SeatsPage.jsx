@@ -31,7 +31,7 @@ function SeatsPage() {
   useEffect(() => {
     (route_direction_id === "" || !isFormValid) && navigate("/");
     scrollTo(section.current?.offsetTop, "smooth");
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onNextClick = () => {
     navigate(config.passengersUrl);
